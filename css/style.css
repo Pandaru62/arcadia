@@ -1,0 +1,51 @@
+/* * {
+    background-color: "arc-mint-green";
+} */
+
+#carousel img{
+    max-height: 600px;
+}
+
+.carousel-caption {
+    background-color: rgb(67,67,67,80%);
+    border-radius: 20px
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Darumadrop One', 'Arial', 'Sans-serif';
+}
+
+h2 {
+    padding-left: 10px;
+}
+
+p {
+    font-family: 'Hind Madurai', 'Sans-serif';
+}
+
+.card img {
+    max-height: 300px;
+}
+
+.falcon-img {
+    border-radius: 50%;
+    opacity: 75%;
+    max-width: 150px;
+}
+
+header {
+    max-height: 80px;
+    margin:0 !important;
+    padding: 0px !important;
+}
+
+.nav-item, .nav-link, .nav-bar-nav {
+    justify-content: space-around !important;
+}
+
+#habitat-overview .card-title {
+    background-color: rgb(69,191,85,80%);
+    border-radius: 20px;
+    padding: 3px;
+    width:fit-content;
+}
