@@ -1,6 +1,6 @@
 // custom variables
 $primary: #d4173d;
-$light: #e5f9fb;
+$light: #eefaec;
 
 // import the functions & variables
 @import "../node_modules/bootstrap/scss/functions";
@@ -11,7 +11,7 @@ $arcadia-theme-colors: (
     "arc-primary": #168039,
     "arc-secondary": #45BF55,
     "arc-dark": #044D29,
-    "arc-dark-bg": #00261C,
+    "arc-dark-bg": rgb(0, 38, 28),
     "arc-light-green": #97ED8A,
     "arc-mint-green": #B9ECC1
 );
