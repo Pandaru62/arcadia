@@ -20,13 +20,13 @@
 <body>
 <main>
 
-      <nav class="navbar navbar-expand-lg bg-arc-dark">
+    <nav class="navbar navbar-expand-lg bg-arc-dark">
         <div class="container-fluid">
             <img src="assets/Logo.svg" alt="Logo" class="d-inline-block align-text-top" id="logo">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon navbar-light"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarToggler">
+            <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav nav-underline mx-auto d-flex mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link link-light" href="#">Accueil</a>
@@ -42,13 +42,13 @@
                 </li>
                 </ul>
                 <button type="button" class="btn btn-outline-light me-2"
-        data-bs-toggle="tooltip" data-bs-placement="bottom"
-        data-bs-custom-class="custom-tooltip"
-        data-bs-title="Accès limité aux employés">
-        Connexion staff</button>
+                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Accès limité aux employés">
+                Connexion staff</button>
+            </div>
         </div>
-        </div>
-      </nav>
+    </nav>
 
     <div class="container-lg main-page"> 
         <section id="carousel" class="bg-arc-mint-green">
@@ -89,30 +89,36 @@
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-                </div>
+            </div>
         </section>
 
         <section id="welcome" class="my-4 py-3">
-            <div class="container-lg rounded-5 bg-arc-mint-green py-4">
-                <div class="row d-flex align-items-center justify-content-center">
-                    <div class="col-md-10">
-                        <h1 class="text-arc-dark text-center pb-2">Bienvenue au Zoo d'Arcadia</h1>
-                        <p class="text-center">Découvrez l'émerveillement au cœur de la mythique forêt de Brocéliande avec Arcadia, le zoo où la nature et le respect des animaux se rejoignent harmonieusement. Plongez dans un monde où la préservation de l'environnement est une priorité, et où le bien-être des animaux est notre engagement quotidien. Bienvenue dans un sanctuaire où la magie de la nature rencontre le bonheur des animaux, pour une expérience inoubliable au sein de la biodiversité d'Arcadia.</p>
-                    </div>
-                    <div class="col-md-2 d-flex justify-content-center pb-sm-3">
-                        <img src="/assets/falcon.jpg" alt="falcon" class="falcon-img img-fluid">
-                    </div>
+            <div class="container-lgpy-4 d-flex align-items-center justify-content-md-around justify-content-center flex-wrap">
+                <div class="object-fit-md-contain rounded-5 bg-arc-mint-green p-md-3">
+                    <h1 class="text-arc-dark text-center pb-2">Bienvenue au Zoo d'Arcadia</h1>
+                    <p class="text-center">Découvrez l'émerveillement au cœur de la mythique forêt de Brocéliande avec Arcadia,<br>
+                        le zoo où la nature et le respect des animaux se rejoignent harmonieusement.<br>
+                        Plongez dans un monde où la préservation de l'environnement est une priorité,<br>
+                        et où le bien-être des animaux est notre engagement quotidien.<br>
+                        Bienvenue dans un sanctuaire où la magie de la nature rencontre le bonheur des animaux,<br>
+                        pour une expérience inoubliable au sein de la biodiversité d'Arcadia.
+                    </p>
                 </div>
 
+                <div class="d-flex p-sm-3">
+                    <img src="/assets/falcon.jpg" alt="falcon" class="falcon-img">
+                </div>
             </div>
         </section>
+
+        <hr class="featurette-divider"/>
 
         <section id="habitat-overview pe-1">
         <h2>Trois mondes magiques à explorer</h2>
@@ -120,108 +126,114 @@
 
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                    <div class="card card-habitat">
-                        <img src="assets/habitats/marais.jpg" class="card-img-top" alt="marais">
+                    <div class="card card-habitat h-100">
+                        <img src="assets/habitats/marais.jpg" class="card-img-top z-0" alt="marais">
                         <div class="card-img-overlay d-flex align-items-start justify-content-center">
-                            <h5 class="card-title text-light">Les Marais de la Légende</h5>
+                            <h5 class="card-title text-light z-1">Les Marais de la Légende</h5>
                         </div>                    
                         <div class="card-body bg-arc-mint-green d-flex flex-column">
-                            <p class="card-text">Crocodiles et hippopotames se partagent les eaux sauvages bordant une majestueuse volière.</p>
-                            <button class="btn btn-arc-dark align-self-end" type="button">Découvrir</button>
+                            <p class="card-text z-1">Crocodiles et hippopotames se partagent les eaux sauvages bordant une majestueuse volière.</p>
+                            <button class="btn btn-arc-dark align-self-end z-1" type="button">Découvrir</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="col">
-                    <div class="card card-habitat">
-                        <img src="assets/habitats/jungle.jpg" class="card-img-top" alt="jungle">
+                    <div class="card card-habitat h-100">
+                        <img src="assets/habitats/jungle.jpg" class="card-img-top z-0" alt="jungle">
                         <div class="card-img-overlay d-flex align-items-start justify-content-center">
-                            <h5 class="card-title text-light">La jungle aux Merveilles</h5>
+                            <h5 class="card-title text-light z-1">La jungle aux Merveilles</h5>
                         </div>
                         <div class="card-body bg-arc-mint-green d-flex flex-column">
-                            <p class="card-text">Une forêt luxuriante où panthères, pandas roux et lémuriens cohabitent près d'un imposant vivarium.</p>
-                            <button class="btn btn-arc-dark align-self-end">Découvrir</button>
+                            <p class="card-text z-1">Une forêt luxuriante où panthères, pandas roux et lémuriens cohabitent près d'un imposant vivarium.</p>
+                            <button class="btn btn-arc-dark align-self-end z-1">Découvrir</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="col">
-                    <div class="card card-habitat">
-                        <img src="assets/habitats/savane.jpg" class="card-img-top" alt="savane">
+                    <div class="card card-habitat h-100">
+                        <img src="assets/habitats/savane.jpg" class="card-img-top z-0" alt="savane">
                         <div class="card-img-overlay d-flex align-items-start justify-content-center">
-                            <h5 class="card-title text-light">La Savane des Obis</h5>
+                            <h5 class="card-title text-light z-1">La Savane des Obis</h5>
                         </div>
                         <div class="card-body bg-arc-mint-green d-flex flex-column">
-                            <p class="card-text">Plongez au coeur de l'Afrique où girafes, zèbres, suricates et lions trônent.</p>
-                            <a href="#" class="btn btn-arc-dark align-self-end">Découvrir</a>
+                            <p class="card-text z-1">Plongez au coeur d'un monde aride où girafes, zèbres, suricates et lions trônent et n'attendent que vous.</p>
+                            <a href="#" class="btn btn-arc-dark align-self-end z-1">Découvrir</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <section id="services" class="py-3">
-            <h2>Des services juste pour vous</h2>
-            <div class="container">
-                <div class="row d-flex align-items-center justify-content-center">
-                    <div class="col-md-9">
-                        <div class="service-list">
-                            <div class="service">
-                                <img src="/assets/dog-paw.svg" alt="" class="paw-img">
-                                <p>Plongez dans une aventure unique au zoo Arcadia, où chaque visiteur est choyé avec une gamme de services exceptionnels. Notre espace de restauration propose une variété de délices culinaires, allant des snacks rapides aux repas gastronomiques, pour ravir les papilles des petits et des grands aventuriers.</p>
-                            </div>
-                            <div class="service">
-                                <img src="/assets/dog-paw.svg" alt="" class="paw-img">
-                                <p>Explorez notre parc à bord de notre charmant petit train, une manière relaxante et divertissante de découvrir les trésors cachés de la forêt de Brocéliande et d'admirer nos merveilleux pensionnaires sous un nouvel angle.</p>
-                            </div>
-                            <div class="service">
-                                <img src="/assets/dog-paw.svg" alt="" class="paw-img">
-                                <p>Pour une expérience encore plus enrichissante, nos visites guidées vous emmènent dans un voyage captivant à travers les différents habitats de nos animaux. Nos guides passionnés partageront avec vous des connaissances fascinantes sur nos résidents, tout en mettant l'accent sur notre engagement envers le respect de l'environnement et le bien-être animal. Rejoignez-nous pour une aventure mémorable, où chaque moment est une découverte.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3">
-                        <img src="/assets/train.jpg" alt="train" class="img-fluid rounded-5">
-                    </div>
-                </div>
-            </div>
+        <section id="top-animal" class="d-flex justify-content-center">
+            <figure class="figure">
+                <img src="assets/ANIMAUX/JUNGLE/panda-4836503_1920.jpg" alt="Panda roux" class="img-top-animal img-fluid">
+                <figcaption class="figure-caption">Partez à la rencontre de nos pandas roux.</figcaption>
+            </figure>
         </section>
 
+        <hr class="featurette-divider"/>
+
+
         <section id="services" class="py-3">
-            <h2>Vos avis comptent pour nous</h2>
+            
+
+        <h2>Nos services</h2>
+
+        <div class="row text-center">
+                <div class="col-lg-4 py-3">
+                    <img src="/assets/services/train.jpg" alt="train" class="service-img">
+                  <h3 class="fw-normal">Petit train</h2>
+                  <p>Explorez notre parc à bord de notre charmant petit train, une manière relaxante et divertissante de découvrir les trésors cachés de la forêt de Brocéliande et d'admirer nos merveilleux pensionnaires sous un nouvel angle.</p>
+                  <p><a class="btn btn-arc-dark" href="#">En savoir plus »</a></p>
+                </div>
+            
+                <div class="col-lg-4 bg-arc-mint-green py-3">
+                      <img src="/assets/services/fauconnier.jpg" alt="fauconnier" class="service-img">
+                    <h3 class="fw-normal">Visites guidées</h2>
+                    <p>Pour une expérience encore plus enrichissante, nos visites guidées vous emmènent dans un voyage captivant à travers les différents habitats de nos animaux. Nos guides passionnés partageront avec vous des connaissances fascinantes sur nos résidents, tout en mettant l'accent sur notre engagement envers le respect de l'environnement et le bien-être animal. Rejoignez-nous pour une aventure mémorable, où chaque moment est une découverte.</p>
+                    <p><a class="btn btn-arc-dark" href="#">En savoir plus »</a></p>
+                  </div>
+
+                  <div class="col-lg-4 py-3">
+                      <img src="/assets/services/restaurant.jpg" alt="restaurant" class="service-img">
+                    <h3 class="fw-normal">Restauration</h2>
+                    <p>Plongez dans une aventure unique au zoo Arcadia, où chaque visiteur est choyé avec une gamme de services exceptionnels. Notre espace de restauration propose une variété de délices culinaires, allant des snacks rapides aux repas gastronomiques, pour ravir les papilles des petits et des grands aventuriers.</p>
+                    <p><a class="btn btn-arc-dark" href="#">En savoir plus »</a></p>
+                  </div>
+
+        </section>
+
+        <hr class="featurette-divider"/>
+
+        <section id="contact" class="py-3">
+            <h2>Restons en contact</h2>
             <div class="container">
-                <div class="row d-flex align-items-center justify-content-center">
+                <div class="row text-center d-flex align-items-center">
                     <div class="col-md-3">
+                        <p>Vos avis comptent pour nous, partagez votre expérience.</p>
                         <button class="btn btn-arc-dark">Ecrivez nous</button>
                     </div>
                     
-                    <div class="col-md-4">
-                        <div class="card">
+                    <div class="col-md-5">
+                        <div class="card rounded-4">
                             <div class="card-header bg-arc-primary text-light">
                                 @Marc
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Une superbe journée !</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <h5 class="card-title">Une incroyable journée !</h5>
+                                <p class="card-text">"Quelle journée incroyable au zoo ! Les animaux étaient si fascinants à observer, et j'ai tellement appris sur la diversité de notre belle planète. C'était une expérience qui a vraiment égayé ma journée et renforcé mon amour pour la nature. 🌿🦁 #Gratitude #BelleJournée"</p>
                             </div>
                             </div>
                     </div>
 
                     <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-header bg-arc-primary text-light">
-                                @Jeanne
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Un régal pour les yeux !</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            </div>
-                            </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d21352.38877067888!2d-2.178005767221728!3d48.01277099625603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sforet%20de%20broceliande!5e0!3m2!1sfr!2sfr!4v1710694787647!5m2!1sfr!2sfr" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
+            <p>Réseaux sociaux</p>
         </section>
     </div>
     </div>
@@ -237,8 +249,8 @@
                         <path d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0m-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
                       </svg> (+33) 03 20 12 12 15</p>
                 </div>
-                <div class="col-md-6 text-end">
-                    <p class="text-light">Horaires d'ouverture :<br/>
+                <div class="col-md-6 d-flex align-items-end justify-content-end text-end fst-italic">
+                    <p class="text-light fs-6">
                     Tous les jours du lundi au vendredi : de 10h à 18h<br/>
                     Le weekend, les vacances et les jours fériés : de 9h à 20h</p>
                 </div>
