@@ -1,15 +1,30 @@
-/* * {
-    background-color: "arc-mint-green";
-} */
+body {
+    background-color: #83BD93;
+}
 
 #carousel img{
-    max-height: 600px;
+    max-height: 530px;
 }
 
 .carousel-caption {
-    background-color: rgb(67,67,67,80%);
-    border-radius: 20px
+    background-color: rgb(0, 38, 28,80%);
+    border-radius: 20px;
+    color: #eefaec;
 }
+
+/* Carousel blur effect */
+
+.img-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 5px 5px 10px 10px #83BD93 inset;
+    max-height: 600px;
+}
+
 
 h1, h2, h3, h4, h5 {
     font-family: 'Darumadrop One', 'Arial', 'Sans-serif';
@@ -17,14 +32,18 @@ h1, h2, h3, h4, h5 {
 
 h2 {
     padding-left: 10px;
+    color: #044D29;
+    text-shadow: 2px 2px #eefaec;
 }
 
 p {
-    font-family: 'Hind Madurai', 'Sans-serif';
+    font-family: 'Helvetica';
+    font-size: 1.1rem;
 }
 
+
 .card img {
-    max-height: 300px;
+    max-height: 200px;
 }
 
 .falcon-img {
@@ -33,19 +52,35 @@ p {
     max-width: 150px;
 }
 
-header {
-    max-height: 80px;
-    margin:0 !important;
-    padding: 0px !important;
+.navbar, .arc-footer {
+    -webkit-box-shadow: inset 0px -4px 25px 1px rgba(185,236,193,1);
+    -moz-box-shadow: inset 0px -4px 25px 1px rgba(185,236,193,1);
+    box-shadow: inset 0px -4px 25px 1px rgba(185,236,193,1);
 }
 
-.nav-item, .nav-link, .nav-bar-nav {
-    justify-content: space-around !important;
+.nav-item, .nav-link {
+    padding: 0 20px !important;
+    font-size: 1.1em;
+    font-family: 'Hind Madurai', 'Sans-serif';
 }
 
-#habitat-overview .card-title {
-    background-color: rgb(69,191,85,80%);
+.card-habitat .card-title {
+    font-size: 1.4em;
+    background-color: #00261C ;
+    opacity: 80%;
     border-radius: 20px;
-    padding: 3px;
+    padding: 0px 15px 5px 15px;
+    text-align: center;
     width:fit-content;
+    float: inline-end;
+}
+
+#habitat-overview .card {
+    margin-bottom: 0px !important;
+}
+
+#welcome .container-lg {
+/* -webkit-box-shadow: inset 0px -4px 36px 0px rgba(4,77,41,1);
+-moz-box-shadow: inset 0px -4px 36px 0px rgba(4,77,41,1);
+box-shadow: inset 0px -4px 36px 0px rgba(4,77,41,1); */
 }
