@@ -1,55 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/custom.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Mountains+of+Christmas&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Hind+Madurai:wght@300;400;500;600;700&family=Mountains+of+Christmas&display=swap" rel="stylesheet">
-
-    <title>Zoo Arcadia - Bienvenue</title>
-</head>
-<body>
-<main>
-
-    <nav class="navbar navbar-expand-lg bg-arc-dark">
-        <div class="container-fluid">
-            <img src="assets/Logo.svg" alt="Logo" class="d-inline-block align-text-top" id="logo">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon navbar-light"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarToggler">
-                <ul class="navbar-nav nav-underline mx-auto d-flex mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link link-light" href="#">Accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-light" href="#">Habitats</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-light" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-light" href="#">Contact</a>
-                </li>
-                </ul>
-                <button type="button" class="btn btn-outline-light me-2"
-                data-bs-toggle="tooltip" data-bs-placement="bottom"
-                data-bs-custom-class="custom-tooltip"
-                data-bs-title="Accès limité aux employés">
-                Connexion staff</button>
-            </div>
-        </div>
-    </nav>
-
+<?php 
+require_once "header.php" ;
+?>
     <div class="container-lg main-page"> 
         <section id="carousel" class="bg-arc-mint-green">
             <div id="carouselExampleCaptions" class="carousel slide">
@@ -113,7 +64,7 @@
                 </div>
 
                 <div class="d-flex p-sm-3">
-                    <img src="/assets/falcon.jpg" alt="falcon" class="falcon-img">
+                    <img src="assets/falcon.jpg" alt="falcon" class="falcon-img">
                 </div>
             </div>
         </section>
@@ -183,21 +134,21 @@
 
         <div class="row text-center">
                 <div class="col-lg-4 py-3">
-                    <img src="/assets/services/train.jpg" alt="train" class="service-img">
+                    <img src="assets/services/train.jpg" alt="train" class="service-img">
                   <h3 class="fw-normal">Petit train</h2>
                   <p>Explorez notre parc à bord de notre charmant petit train, une manière relaxante et divertissante de découvrir les trésors cachés de la forêt de Brocéliande et d'admirer nos merveilleux pensionnaires sous un nouvel angle.</p>
                   <p><a class="btn btn-arc-dark" href="#">En savoir plus »</a></p>
                 </div>
             
                 <div class="col-lg-4 bg-arc-mint-green py-3">
-                      <img src="/assets/services/fauconnier.jpg" alt="fauconnier" class="service-img">
+                      <img src="assets/services/train.jpg" alt="fauconnier" class="service-img">
                     <h3 class="fw-normal">Visites guidées</h2>
                     <p>Pour une expérience encore plus enrichissante, nos visites guidées vous emmènent dans un voyage captivant à travers les différents habitats de nos animaux. Nos guides passionnés partageront avec vous des connaissances fascinantes sur nos résidents, tout en mettant l'accent sur notre engagement envers le respect de l'environnement et le bien-être animal. Rejoignez-nous pour une aventure mémorable, où chaque moment est une découverte.</p>
                     <p><a class="btn btn-arc-dark" href="#">En savoir plus »</a></p>
                   </div>
 
                   <div class="col-lg-4 py-3">
-                      <img src="/assets/services/restaurant.jpg" alt="restaurant" class="service-img">
+                      <img src="assets/services/restaurant.jpg" alt="restaurant" class="service-img">
                     <h3 class="fw-normal">Restauration</h2>
                     <p>Plongez dans une aventure unique au zoo Arcadia, où chaque visiteur est choyé avec une gamme de services exceptionnels. Notre espace de restauration propose une variété de délices culinaires, allant des snacks rapides aux repas gastronomiques, pour ravir les papilles des petits et des grands aventuriers.</p>
                     <p><a class="btn btn-arc-dark" href="#">En savoir plus »</a></p>
@@ -213,7 +164,21 @@
                 <div class="row text-center d-flex align-items-center">
                     <div class="col-md-3">
                         <p>Vos avis comptent pour nous, partagez votre expérience.</p>
-                        <button class="btn btn-arc-dark">Ecrivez nous</button>
+                        <button class="btn btn-arc-dark">Écrivez nous</button>
+                        <ul class="list-inline my-2">
+                            <li class="list-inline-item">
+                                <a href="#" class="text-decoration-none text-dark"><i class="bi bi-linkedin"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-decoration-none text-dark"><i class="bi bi-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-decoration-none text-dark"><i class="bi bi-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-decoration-none text-dark"><i class="bi bi-facebook"></i></a>
+                            </li>
+                        </ul>
                     </div>
                     
                     <div class="col-md-5">
@@ -233,41 +198,11 @@
                     </div>
                 </div>
             </div>
-            <p>Réseaux sociaux</p>
+    
         </section>
     </div>
     </div>
     <div class="col-md-1"></div>
     </div>
 
-    <footer id="footer" class="mt-3">
-        <div class="bg-arc-dark px-3 arc-footer">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="text-light">Zoo d'Arcadia</p>
-                    <p class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-inbound" viewBox="0 0 16 16">
-                        <path d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0m-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-                      </svg> (+33) 03 20 12 12 15</p>
-                </div>
-                <div class="col-md-6 d-flex align-items-end justify-content-end text-end fst-italic">
-                    <p class="text-light fs-6">
-                    Tous les jours du lundi au vendredi : de 10h à 18h<br/>
-                    Le weekend, les vacances et les jours fériés : de 9h à 20h</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-</main>
-
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    <script>
-        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-    </script>
-
-</body>
-</html>
+    <?php require_once "footer.php"; ?>
