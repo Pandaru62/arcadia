@@ -26,22 +26,23 @@
 <nav class="navbar navbar-expand-lg bg-arc-dark">
 <div class="container-fluid">
     <img src="assets/Logo.svg" alt="Logo" class="d-inline-block align-text-top" id="logo">
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon navbar-light"></span>
+  <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <i class="bi bi-three-dots-vertical text-light"></i>
   </button>
     <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav nav-underline mx-auto d-flex mb-2 mb-lg-0">
         <li class="nav-item">
-            <a class="nav-link link-light" href="#">Accueil</a>
+            <a class="nav-link link-light" href="index.php">Accueil</a>
         </li>
         <li class="nav-item">
             <a class="nav-link link-light" href="#">Habitats</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link link-light" href="#">Services</a>
+            <a class="nav-link link-light" href="services.php">Services</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link link-light" href="#">Contact</a>
+            <a class="nav-link link-light" href="#contact">Contact</a>
         </li>
         </ul>
         <button type="button" class="btn btn-outline-light me-2"

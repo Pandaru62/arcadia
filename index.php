@@ -2,54 +2,11 @@
 require_once "header.php" ;
 ?>
     <div class="container-lg main-page"> 
-        <section id="carousel" class="bg-arc-mint-green">
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+        
+    <!-- Carousel -->
+        <?php require_once "lib/carousel.php" ?> 
 
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="img-container">
-                            <img src="assets/carrousel/elephant.jpg" class="d-block w-100" alt="elephants">
-                        </div>
-                        <div class="carousel-caption d-none d-md-block text-bottom">
-                            <h5>Des animaux venant de tous horizons</h5>
-                            <p>Découvrez trois mondes fidèles aux habitats naturels des animaux.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="img-container">
-                            <img src="assets/carrousel/solar-panel.jpg" class="d-block w-100" alt="solar panels">
-                        </div>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Un cadre respectueux de la nature</h5>
-                            <p>L'énergie est précieuse : le parc veille à préserver notre planète..</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="img-container">
-                            <img src="assets/carrousel/suricates.jpg" class="d-block w-100" alt="suricates">
-                        </div>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>La santé avant tout</h5>
-                            <p>Au zoo d'Arcadia, le bien-être de nos animaux est une priorité.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
-
+    <!-- Introduction -->
         <section id="welcome" class="my-4 py-3">
             <div class="container-lgpy-4 d-flex align-items-center justify-content-md-around justify-content-center flex-wrap">
                 <div class="object-fit-md-contain rounded-5 bg-arc-mint-green p-md-3">
@@ -67,6 +24,9 @@ require_once "header.php" ;
                     <img src="assets/falcon.jpg" alt="falcon" class="falcon-img">
                 </div>
             </div>
+
+            <i class="bi bi-tree"></i>
+            
         </section>
 
         <hr class="featurette-divider"/>
@@ -130,7 +90,7 @@ require_once "header.php" ;
         <section id="services" class="py-3">
             
 
-        <h2>Nos services</h2>
+            <h2>Nos services</h2>
 
         <div class="row text-center">
                 <div class="col-lg-4 py-3">
@@ -141,7 +101,7 @@ require_once "header.php" ;
                 </div>
             
                 <div class="col-lg-4 bg-arc-mint-green py-3">
-                      <img src="assets/services/train.jpg" alt="fauconnier" class="service-img">
+                      <img src="assets/services/fauconnier.jpg" alt="fauconnier" class="service-img">
                     <h3 class="fw-normal">Visites guidées</h2>
                     <p>Pour une expérience encore plus enrichissante, nos visites guidées vous emmènent dans un voyage captivant à travers les différents habitats de nos animaux. Nos guides passionnés partageront avec vous des connaissances fascinantes sur nos résidents, tout en mettant l'accent sur notre engagement envers le respect de l'environnement et le bien-être animal. Rejoignez-nous pour une aventure mémorable, où chaque moment est une découverte.</p>
                     <p><a class="btn btn-arc-dark" href="#">En savoir plus »</a></p>
@@ -164,7 +124,7 @@ require_once "header.php" ;
                 <div class="row text-center d-flex align-items-center">
                     <div class="col-md-3">
                         <p>Vos avis comptent pour nous, partagez votre expérience.</p>
-                        <button class="btn btn-arc-dark">Écrivez nous</button>
+                        <button class="btn btn-arc-dark"><i class="bi bi-pencil-square"></i> Écrivez nous</button>
                         <ul class="list-inline my-2">
                             <li class="list-inline-item">
                                 <a href="#" class="text-decoration-none text-dark"><i class="bi bi-linkedin"></i></a>
